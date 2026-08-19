@@ -1,0 +1,12 @@
+{
+  "enabled_providers": ["augment"],
+  "provider": {
+    "augment": {
+      "name": "Augment Code",
+      "npm": "file:///path/to/augment-ai-provider/index.js",
+      "env": ["AUGMENT_API_TOKEN"],
+      "options": {},
+      "whitelist": []
+    }
+  }
+}

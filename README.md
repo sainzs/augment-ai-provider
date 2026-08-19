@@ -6,7 +6,7 @@
 
 Use [Augment Code](https://augmentcode.com) models in [pi](https://pi.dev), OpenCode, and OpenCode 2. Direct HTTP through `@augmentcode/auggie-sdk` — no local `auggie` subprocess.
 
-![augment-ai-provider running in pi](./assets/hero.png)
+![augment-ai-provider running in pi](./assets/hero.gif)
 
 ## Install
 

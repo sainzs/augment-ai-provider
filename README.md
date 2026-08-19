@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/sainzs/augment-ai-provider/actions/workflows/ci.yml/badge.svg)](https://github.com/sainzs/augment-ai-provider/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/augment-ai-provider.svg?style=flat-square)](https://www.npmjs.com/package/augment-ai-provider)
-[![License](https://img.shields.io/badge/License-MIT-ef6f2e.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-00ffb2.svg?style=flat-square)](LICENSE)
 
 Use [Augment Code](https://augmentcode.com) models in [pi](https://pi.dev), OpenCode, and OpenCode 2. Direct HTTP through `@augmentcode/auggie-sdk` — no local `auggie` subprocess.
 

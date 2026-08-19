@@ -1,7 +1,7 @@
 {
   "name": "augment-ai-provider",
   "version": "0.1.0",
-  "description": "AI SDK provider for Augment Code (direct HTTP, no subprocess). Works with pi, OpenCode, OpenCode 2, and AI SDK v3 hosts.",
+  "description": "Augment Code provider for pi, OpenCode, and AI SDK hosts",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -11,8 +11,14 @@
   "bin": {
     "augment-ai-provider": "./bin/sync-models.mjs"
   },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
   "files": [
     "index.js",
+    "src/",
     "bin/",
     "integrations/",
     "test/",
@@ -26,24 +32,26 @@
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {
-    "@augmentcode/auggie-sdk": "0.2.0"
-  },
-  "devDependencies": {
-    "ai": "^6.0.258",
-    "zod": "^4.4.3"
-  },
   "keywords": [
+    "pi-package",
+    "pi-extension",
     "ai-sdk",
     "provider",
     "augment",
     "auggie",
-    "pi",
-    "opencode",
-    "llm",
-    "claude",
-    "gpt"
+    "opencode"
   ],
-  "author": "Santiago Sainz",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "github:sainzs/augment-ai-provider",
+  "dependencies": {
+    "@augmentcode/auggie-sdk": "0.2.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "ai": "^6.0.258",
+    "zod": "^4.4.3"
+  }
 }

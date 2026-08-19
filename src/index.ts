@@ -4,8 +4,8 @@
  * Registers an "augment" provider that talks to Augment's chat-stream API
  * through @augmentcode/auggie-sdk's AugmentLanguageModel (AI SDK
  * LanguageModelV2, direct HTTP - no local auggie subprocess). The wrapper
- * package lives at ~/.local/share/augment-ai-provider (shared with the
- * opencode/opencode2 provider plugins).
+ * library lives at the repo root (index.js), shared with the
+ * opencode/opencode2 provider integrations.
  *
  * Auth resolution:
  *   1. pi-resolved apiKey (provider config below uses `!jq ... session.json`)
@@ -30,12 +30,12 @@ import {
 	resolveAugmentCredentialsSync,
 	// The wrapper is plain ESM JS; import by absolute path so its own
 	// node_modules (with @augmentcode/auggie-sdk) resolve normally.
-} from "./node_modules/augment-ai-provider/index.js";
+} from "../index.js";
 import { readFileSync } from "node:fs";
 
 const AUGMENT_API: Api = "augment-chat" as Api;
 const FALLBACK_API_URL = "https://xlb.api.augmentcode.com/";
-const MODELS_CACHE = "./node_modules/augment-ai-provider/models-cache.json";
+const MODELS_CACHE = "../models-cache.json";
 
 interface CatalogModel {
 	id: string;
